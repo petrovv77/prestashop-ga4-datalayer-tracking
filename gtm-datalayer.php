@@ -76,7 +76,7 @@ class DataLayer extends Module
 					$order_products[] = "{
 						'item_name': '".str_replace ("'", '"', $order_product['name'])."',
 						'item_id': '{$order_product['id_product']}',
-						'price': '{$order_product['price_wt']}',
+						'price': '".number_format($order_product['price_wt'], 2)."',
 						'quantity': {$order_product['cart_quantity']}
 					}";
 					
@@ -93,7 +93,7 @@ class DataLayer extends Module
       						'transaction_id': '$order->id',
       						'value': '".number_format($order->total_paid, 2, '.', '')."',
       						'tax': '".($order->total_paid_tax_incl - $order->total_paid_tax_excl)."',
-      						'shipping': '$order->total_shipping',
+      						'shipping': '".number_format($order->total_shipping, 2)."',
       						'currency': 'EUR',
       						'items': [$products_string]
   						}
