@@ -4,7 +4,7 @@
 	<displayName><![CDATA[Data Layer Module]]></displayName>
 	<version><![CDATA[1.0.1]]></version>
 	<description><![CDATA[Adds data layer data for Google Tag Manager.]]></description>
-	<author><![CDATA[Peteroff]]></author>
+	<author><![CDATA[petrovv77]]></author>
 	<tab><![CDATA[analytics_stats]]></tab>
 	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
 	<is_configurable>0</is_configurable>
