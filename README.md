@@ -12,11 +12,24 @@ It's a VERY basic module that any PHP coder can understand and expand on.
 ## Inside GTM 
 
 Tag configuration for this example:
+
 - Tag type: GA4 Event
-- Event Name: begin_checkout
-- Event Parameter (name - value): 'items' - {{Ecommerce Items}}
-- Variable Type: data layer Variable - 'ecommerce.items'
-- Trigger: event equals begin_checkout
+- Event Name: purchase
+- Data Layer Variables (Name - Data Layer Variable Name) :
+- - Ecommerce Items - ecommerce.items
+- - Ecommerce Transaction ID - ecommerce.transaction_id
+- - Ecommerce Value - ecommerce.value
+- - Ecommerce Tax - ecommerce.tax
+- - Ecommerce Shipping - ecommerce.shipping
+- - Ecommerce Currency - ecommerce.currency
+- Event Parameters (Parameter Name - Value):
+- - items - {{Ecommerce Items}}
+- - transaction_id - {{Ecommerce Transaction ID}}
+- - value - {{Ecommerce Value}}
+- - tax - {{Ecommerce Tax}}
+- - shipping - {{Ecommerce Shipping}}
+- - currency - {{Ecommerce Currency}}
+- Trigger: event equals purchase
 
 # Ecommerce (GA4)
 help: https://developers.google.com/tag-manager/ecommerce-ga4#measure_purchases
