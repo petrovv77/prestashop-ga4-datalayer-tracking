@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>datalayer</name>
+	<displayName><![CDATA[Data Layer Module]]></displayName>
+	<version><![CDATA[1.0.1]]></version>
+	<description><![CDATA[Adds data layer data for Google Tag Manager.]]></description>
+	<author><![CDATA[Peteroff]]></author>
+	<tab><![CDATA[analytics_stats]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+	<is_configurable>0</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
